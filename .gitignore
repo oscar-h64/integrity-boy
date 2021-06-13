@@ -1,0 +1,4 @@
+.stack-work/
+*~
+conf/*.yaml
+!conf/*.example.yaml

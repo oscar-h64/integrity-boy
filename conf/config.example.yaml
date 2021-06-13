@@ -1,0 +1,19 @@
+token: Bot XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+           
+channels:
+  CS1180_A:
+    - "000000000000000000"
+    - "000000000000000000"
+  CS2680_B:
+    - "000000000000000000"
+    - "000000000000000000"
+    - "000000000000000000"
+
+# Database settings
+db:
+  host: localhost
+  port: 5432
+  db: integrity-boy
+  user: username
+  password: password
+  pools: 8

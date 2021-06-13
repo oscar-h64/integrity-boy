@@ -1,0 +1,63 @@
+name:                integrity-boy
+version:             0.1.0.0
+github:              "oscar-h64/integrity-boy"
+license:             BSD3
+author:              "Oscar Harris"
+maintainer:          "oscar@oscar-h.com"
+copyright:           "Copyright (c) 2020 Oscar Harris"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/oscar-h64/integrity-boy#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- aeson
+- deriving-aeson
+- discord-haskell
+- monad-logger
+- mtl
+- persistent
+- persistent-postgresql
+- persistent-template
+- text
+- time
+- unordered-containers
+- yaml
+
+default-extensions:
+- DataKinds
+- DeriveGeneric
+- DerivingStrategies
+- DerivingVia
+- FlexibleInstances
+- GADTs
+- KindSignatures
+- MultiParamTypeClasses
+- NumericUnderscores
+- OverloadedStrings
+- RecordWildCards
+- TypeFamilies
+
+library:
+  source-dirs: src
+
+executables:
+  integrity-boy-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - integrity-boy
