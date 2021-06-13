@@ -14,6 +14,8 @@ The bot must be configured with your Discord bot token, the database connection 
 
 To run the bot just use `stack run -- path/to/config/file` (if you just use `stack run` then `conf/config.yaml` will be used). If you have built an executable instead of using `stack` then use `./bot-exe path/to/config/file` (the same default is used if the path is omitted).
 
+The bot needs "SEND_MESSAGES" and "MANAGE_ROLES" permissions.
+
 ## Apology/Contributions
 
 The code was written in relatively short time, so the formatting isn't perfect and it may not always be idiomatic. Issues and PRs about this or anything else are very welcome.
